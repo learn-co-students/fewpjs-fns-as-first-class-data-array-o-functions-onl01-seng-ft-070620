@@ -31,9 +31,13 @@ let unleashDog = function unleashDog(dogName, dogBreed) {
 const routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog]
 
 function exerciseDog(dogName, dogBreed) {
-  let message_arr = []
-  for (let i = 0; i < routine.length; i++) {
-    message_arr.push(routine[i](dogName, dogBreed));
-  }
-  return message_arr;
+  return routine.map(activity => activity(dogName, dogBreed));
 }
+
+      // function exerciseDog(dogName, dogBreed) {
+      //   let message_arr = []
+      //   for (let i = 0; i < routine.length; i++) {
+      //     message_arr.push(routine[i](dogName, dogBreed));
+      //   }
+      //   return message_arr;
+      // }
