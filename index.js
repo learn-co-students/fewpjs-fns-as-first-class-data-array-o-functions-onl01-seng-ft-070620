@@ -1,9 +1,3 @@
-// import pry from 'pryjs'
-// eval(pry.it)
-// pry = require('pryjs')
-// eval(pry.it)
-
-
 
 function wakeDog(dogName, dogBreed) {
     console.log(`Wake ${dogName} the ${dogBreed}`);
@@ -44,15 +38,11 @@ var routine = [
     unleashDog
 ]
 
+let arrayOfDogActions = []
+
 function exerciseDog(dogName, dogBreed) {
-    // for (let i = 0; i < routine.length; i++) {
-    //     indexOf.push(routine[i](dogName, dogBreed))
-
-    // }
-    return routine.map(dogName, dogBreed)
+    for (let i = 0; i < routine.length; i++) {
+        arrayOfDogActions.push(routine[i](dogName, dogBreed))
+    }
+    return arrayOfDogActions
 }
-
-
-// function exerciseDog(dog, breed) {
-//     return routine.map(fn => fn(dog, breed))
-//   }
