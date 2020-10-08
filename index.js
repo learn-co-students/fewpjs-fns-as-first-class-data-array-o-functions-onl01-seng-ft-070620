@@ -44,15 +44,15 @@ var routine = [
     unleashDog
 ]
 
-// function exerciseDog(dogName, dogBreed) {
-//     // for (let i = 0; i < routine.length; i++) {
-//     //     indexOf.push(routine[i](dogName, dogBreed))
+function exerciseDog(dogName, dogBreed) {
+    // for (let i = 0; i < routine.length; i++) {
+    //     indexOf.push(routine[i](dogName, dogBreed))
 
-//     // }
-//     var exerArray = routine.map((dogName, dogBreed))
-// }
+    // }
+    return routine.map(dogName, dogBreed)
+}
 
 
-function exerciseDog(dog, breed) {
-    return routine.map(fn => fn(dog, breed))
-  }
+// function exerciseDog(dog, breed) {
+//     return routine.map(fn => fn(dog, breed))
+//   }
