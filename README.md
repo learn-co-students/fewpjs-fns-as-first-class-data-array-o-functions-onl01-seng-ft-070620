@@ -1,5 +1,5 @@
 # JavaScript Functions as First Class Data: Array of Functions
-
+ 
 ## Learning Goals
 
 - Create a JavaScript function that loops through a function `Array`
